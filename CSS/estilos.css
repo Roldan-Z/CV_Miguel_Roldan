@@ -1,0 +1,130 @@
+body{
+    background-color: moccasin;
+    height: 100%;
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+.header{
+
+    font-size: 15px;
+    grid-area: header;
+    background-color:silver ;
+    border-radius: 10px;
+    margin-top: 1%;
+    height: 50px;
+    text-align: center;
+}
+.header li{
+    list-style-type: none;
+    display: inline-grid;
+    margin-top: 1%;
+    margin-right: 1%;
+
+    background-color: brown;
+    width: 15%;
+    border-radius: 18px ;
+}
+.header li a{
+    color: black;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+#subseccion1, #subseccion2, #subseccion3{
+    top: 100%;
+    left: 0px;
+    background-color:brown;
+    font: normal 0.8em arial;
+    padding: 0.2em 0.5em;
+    display: none;
+    width: 90%;
+    border-radius: 7px;
+z-index: 1;
+color: black;
+}
+#contenedor{
+  position: absolute;
+  text-align: center;
+  margin-top: 8%;
+  background-color: silver;
+  width: 60%;
+  height: 60%;
+  right: 18%;
+  border-radius: 30px;
+
+}
+#contenedor #tabla{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: 15%;
+}
+.cajarol1 .cajaro2{
+   font-size: 25px; 
+   margin-top: 50px;
+   
+}
+#cajasdetexto{
+    text-align: center;
+    margin-top: 18%;
+    font-size: 20%;
+    color: black;
+}
+#contenedornum{
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    background-color: purple;
+    width: 50%;
+    height: 50%;
+    right: 25%;
+    border-radius: 30px;
+}
+.navbar{
+    grid-area: navbar;
+    background-color: slategray;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: tan;
+}
+.main{
+    grid-area: main;
+    background-color:tomato ;
+    text-align: center;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: turquoise;
+}
+.grid-container > * {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+grid-template: 
+"header" 80px
+"navbar" 50px
+"main" auto
+"sidebar" 50px
+"footer"50px;
+}
+@media (min-width: 900px){
+    .grid-container{
+    grid-template:
+"header  header  header " 80px
+"navbar  main  sidebar " auto
+"footer  footer  footer "100px /
+200px  auto  200px;
+    }
+}
